@@ -1,0 +1,80 @@
+/* Define pink and blue as the primary colors */
+:root {
+    --pink: #e923f4;
+    --pur1: #72076f;
+    --pur2: #2b0246;
+    --blu1: #240096;
+    --blu2: #5600f5;
+  }
+
+  /* Style the header and footer */
+  #header, #footer {
+    background-color: var(--pur1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: url('rs/header1.png');
+    background-size: cover;
+    background-position: center;
+    height: 256px;
+  }
+    
+  
+  /* Style the main content area */
+  #main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('rs/bg.jpg');
+    padding: 20px;
+  }
+  
+  /* Style the photo and about me section */
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+  }
+
+  #about-me {
+    width: 100%;
+    text-align: center;
+    color: var(--pink);
+    font-size: 3em;
+    padding: 20px;
+  }
+  
+  /* Style the three empty sections */
+  #section1, #section2, #section3, #section4 {
+    width: 100%;
+    background-color: var(--pur2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    /* background-image: url('stars.jpg'); */
+  }
+  
+  #renderCanvas {
+    width: 1024px;
+    height: 512px;
+  }
+  
+  
+  
+  /* Style the contact information */
+  #contact-info {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--blu2);
+    padding: 20px;
+  }
+
+  a {
+    color: var(--pink);
+  }
+  
