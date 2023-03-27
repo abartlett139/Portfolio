@@ -1,4 +1,4 @@
-/* Define pink and blue as the primary colors */
+
 :root {
     --pink: #e923f4;
     --pur1: #72076f;
@@ -7,7 +7,6 @@
     --blu2: #5600f5;
   }
 
-  /* Style the header and footer */
   #header, #footer {
     background-color: var(--pur1);
     color: white;
@@ -20,7 +19,6 @@
   }
     
   
-  /* Style the main content area */
   #main {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +29,6 @@
     padding: 20px;
   }
   
-  /* Style the photo and about me section */
   img {
     width: 200px;
     height: 200px;
@@ -56,25 +53,27 @@
     padding: 20px;
   }
   
-  /* Style the three empty sections */
-  #section1, #section2, #section3, #section4, #section5 {
+  #section1, #section2, #section3, #section4, #section5, #section6, #section7 {
     width: 100%;
     background-color: var(--pur2);
     color: rgb(197, 197, 197);
     text-align: center;
     padding: 20px;
     margin: 20px;
-    /* background-image: url('stars.jpg'); */
   }
   
   #renderCanvas {
     width: 1024px;
     height: 512px;
   }
+
+  #pixiCanvas {
+    width: 512px;
+    height: 512px;
+  }
   
   
   
-  /* Style the contact information */
   #contact-info {
     width: 100%;
     text-align: center;
