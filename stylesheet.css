@@ -98,7 +98,9 @@ img:hover {
 #section5,
 #section6,
 #section7 {
-  width: 100%;
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
   background-color: var(--green);
   color: var(--text-light);
   text-align: center;
@@ -124,6 +126,7 @@ img:hover {
   height: auto;
   aspect-ratio: 2 / 1; /* preserves shape */
   display: block;
+  margin: 0 auto;
 }
 
 
