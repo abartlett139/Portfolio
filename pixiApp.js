@@ -43,19 +43,23 @@ function setup() {
     
     gameState=play;
 
-    player.mousedown=()=>{
-      if(player.visible==true){
-        player.visible=false;
-        herbertMad.visible=true;
-      }
-    }
+// ----- PRESS DOWN: normal → mad -----
+player.on('pointerdown', () => {
+    player.visible = false;
+    herbertMad.visible = true;
+});
 
-    herbertMad.mouseup=()=>{
-      if(herbertMad.visible==true){
-        herbertMad.visible=false;
-        player.visible=true;
-      }
-    }
+// ----- RELEASE UP: mad → normal -----
+herbertMad.on('pointerup', () => {
+    herbertMad.visible = false;
+    player.visible = true;
+});
+
+// Also catch when finger leaves the sprite while pressed
+herbertMad.on('pointerupoutside', () => {
+    herbertMad.visible = false;
+    player.visible = true;
+});
 
     animate();
 
